@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<link rel="stylesheet" href="fonts/fonts.css" />
+<script src="lib/gsap.min.js"></script>
+<style>
+:root{
+  --butter:#F5D35B; --butter-deep:#E8B92E; --ink:#1d1608; --cream:#FFF6D8; --white:#ffffff;
+  --chili:#E0482A; --ok:#2E9E5B; --claude:#D97757;
+  --display:"Archivo Black","Arial Black",sans-serif;
+  --body:"Figtree","Inter",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:var(--body)}
+#v{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover;transform-origin:50% 50%}
+.clip{position:absolute}
+.shade{position:absolute;left:0;right:0;height:520px;pointer-events:none}
+.shade.top{top:0;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,0))}
+.shade.bot{bottom:0;background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.35))}
+
+/* captions: white lowercase, keyword in butter */
+.cap{left:60px;right:60px;top:1330px;text-align:center;font-family:var(--body);font-weight:800;font-size:76px;line-height:1.1;color:var(--white);
+  text-shadow:0 4px 0 rgba(0,0,0,.55),0 0 22px rgba(0,0,0,.55);letter-spacing:-.01em}
+.cap .w{display:inline-block}
+.cap b{color:var(--butter);font-weight:800}
+
+/* hook */
+.hook{left:0;right:0;top:250px;text-align:center}
+.hk-s{font-family:var(--body);font-weight:800;font-size:56px;color:var(--white);text-shadow:0 4px 14px rgba(0,0,0,.6)}
+.hk-b{font-family:var(--display);font-size:200px;line-height:.92;color:var(--butter);letter-spacing:-.02em;
+  text-shadow:0 8px 0 var(--ink),0 0 40px rgba(0,0,0,.5);margin-top:10px}
+.hk-c{margin-top:28px;font-family:var(--body);font-weight:800;font-size:64px;color:var(--white);text-shadow:0 4px 14px rgba(0,0,0,.7)}
+.claude{display:inline-flex;align-items:center;gap:12px;background:var(--cream);color:var(--ink);border-radius:999px;padding:8px 34px 12px 26px;text-shadow:none;margin-left:8px;font-size:70px}
+.spark{display:inline-block;width:44px;height:44px;background:var(--claude);
+  clip-path:polygon(50% 0,58% 38%,95% 20%,64% 50%,95% 80%,58% 62%,50% 100%,42% 62%,5% 80%,36% 50%,5% 20%,42% 38%)}
+
+/* step labels */
+.step{left:0;right:0;top:140px;text-align:center}
+.st-a{font-family:var(--body);font-weight:800;font-size:46px;color:var(--white);letter-spacing:.08em;text-shadow:0 3px 10px rgba(0,0,0,.7)}
+.st-b{font-family:var(--display);font-size:104px;line-height:1;color:var(--butter);text-shadow:0 6px 0 var(--ink),0 0 30px rgba(0,0,0,.45)}
+
+.step .st-b.long{font-size:82px}
+/* pills */
+.pill{font-family:var(--body);font-weight:800;font-size:54px;background:var(--cream);color:var(--ink);padding:14px 34px 18px;border-radius:999px;
+  box-shadow:0 8px 0 var(--butter-deep),0 14px 30px rgba(0,0,0,.35);white-space:nowrap;transform-origin:50% 50%}
+.pill.bad{background:#fff;color:var(--chili)}
+.pill.bad s{text-decoration-thickness:6px}
+.pill.ok{background:var(--butter);color:var(--ink);box-shadow:0 8px 0 var(--ink),0 14px 30px rgba(0,0,0,.35)}
+.badge{right:60px;top:420px;font-family:var(--display);font-size:64px;background:var(--ink);color:var(--butter);padding:10px 30px 14px;border-radius:22px}
+.note{left:0;right:0;top:1100px;text-align:center;font-family:var(--body);font-weight:800;font-size:60px;color:var(--butter);text-shadow:0 4px 0 rgba(0,0,0,.6)}
+
+/* big words */
+.big{left:0;right:0;top:700px;text-align:center;font-family:var(--display);font-size:230px;line-height:1;color:var(--butter);
+  text-shadow:0 12px 0 var(--chili),0 22px 0 var(--ink),0 0 60px rgba(0,0,0,.5);transform-origin:50% 50%}
+.big.yel{font-size:170px;top:760px;color:#FFD21F}
+.big.siap{color:var(--white);text-shadow:0 12px 0 var(--butter-deep),0 22px 0 var(--ink)}
+.spk{position:absolute;color:var(--butter);font-size:90px;text-shadow:none}
+.s1{left:150px;top:-60px}.s2{right:160px;top:-20px}.s3{right:260px;top:200px;font-size:60px}
+.kacau{left:0;right:0;text-align:center;font-family:var(--display);font-size:120px;color:var(--butter);text-shadow:0 8px 0 var(--ink)}
+.k0{top:620px}.k1{top:780px}.k2{top:940px}
+.flash{left:0;top:0;width:1080px;height:1920px;background:#fff}
+
+/* credit + end */
+.card{left:70px;right:70px;top:300px;background:var(--cream);border-radius:36px;padding:30px 40px 38px;text-align:center;box-shadow:0 10px 0 var(--butter-deep),0 20px 50px rgba(0,0,0,.4)}
+.c-s{font-family:var(--body);font-weight:800;font-size:40px;color:#7a6a40;letter-spacing:.06em}
+.c-b{white-space:nowrap;font-family:var(--display);font-size:60px;color:var(--ink);display:flex;align-items:center;justify-content:center;gap:18px;margin-top:6px}
+.endbg{left:0;top:0;width:1080px;height:1920px;background:rgba(20,14,4,.72)}
+.end{left:60px;right:60px;top:720px;text-align:center}
+.e-s{font-family:var(--body);font-weight:800;font-size:54px;color:var(--white)}
+.e-b{font-family:var(--display);font-size:100px;color:var(--butter);margin-top:24px;text-shadow:0 8px 0 var(--ink)}
+.e-btn{display:inline-block;margin-top:60px;font-family:var(--display);font-size:56px;background:var(--chili);color:#fff;padding:18px 60px 24px;border-radius:999px;box-shadow:0 8px 0 #8d2410}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="{{END}}" data-width="1080" data-height="1920">
+  <video id="v" class="clip" data-start="0" data-duration="{{END}}" src="cut.mp4" data-has-audio="true" data-volume="1"></video>
+  <div class="shade top"></div><div class="shade bot"></div>
+{{ELS}}
+</div>
+<script>
+window.__timelines = window.__timelines || {};
+const tl = gsap.timeline({ paused: true });
+{{JS}}
+window.__timelines["main"] = tl;
+tl.seek(0);
+</script>
+</body>
+</html>

@@ -1,0 +1,405 @@
+[
+ {
+  "id": 1,
+  "sec": "HOOK",
+  "v": [
+   107.8,
+   112.7
+  ],
+  "a": [
+   79.45,
+   84.35
+  ],
+  "speed": 1,
+  "cap": "bukan nak buat video masakan eh, tapi just nak tunjuk cara edit guna [Claude]",
+  "gfx": "Punch-in zoom 1.0→1.25 pada sardin berbuih. Tajuk besar butter-yellow: 'MASAK SARDIN' / kecil 'tapi yang edit… Claude' + logo Claude pop-in.",
+  "sfx": "Whoosh masuk + bass hit bila tajuk keluar",
+  "t0": 0,
+  "dur": 4.9
+ },
+ {
+  "id": 2,
+  "sec": "INTRO",
+  "v": [
+   12.0,
+   13.4
+  ],
+  "a": [
+   2.1,
+   3.5
+  ],
+  "speed": 1,
+  "cap": "kita akan masak [sardin]",
+  "gfx": "Flat-lay bahan. Label atas 'STEP 1 · BAHAN' slide-down.",
+  "sfx": "Whoosh pendek (transisi dari hook)",
+  "t0": 4.9,
+  "dur": 1.4
+ },
+ {
+  "id": 3,
+  "sec": "STEP 1 · BAHAN",
+  "v": [
+   5.0,
+   8.65
+  ],
+  "a": [
+   5.0,
+   8.65
+  ],
+  "speed": 1,
+  "cap": "ni ada [cili merah], [bawang]. bawang putih tak ada",
+  "gfx": "Callout pill ikut tangan: 'cili merah' → 'bawang merah' → 'bawang putih' dicoret ❌ (shake).",
+  "sfx": "Pop setiap label; buzzer kecil untuk ❌",
+  "t0": 6.3,
+  "dur": 3.65
+ },
+ {
+  "id": 4,
+  "sec": "STEP 1 · BAHAN",
+  "v": [
+   10.95,
+   11.95
+  ],
+  "a": [
+   10.95,
+   11.95
+  ],
+  "speed": 1,
+  "cap": "ni [serai]",
+  "gfx": "Callout 'serai' pop",
+  "sfx": "Pop",
+  "t0": 9.95,
+  "dur": 1.0
+ },
+ {
+  "id": 5,
+  "sec": "STEP 2 · POTONG & BLEND",
+  "v": [
+   14.25,
+   18.75
+  ],
+  "a": [
+   14.25,
+   18.75
+  ],
+  "speed": 1,
+  "cap": "kita dah potong bawang, cili ni macam [kecut] sikit sebab dah lama",
+  "gfx": "Label step baru. Ikon pisau kecil di sudut.",
+  "sfx": "Chop chop (2–3 bunyi pisau) sync dengan potongan",
+  "t0": 10.95,
+  "dur": 4.5
+ },
+ {
+  "id": 6,
+  "sec": "STEP 2 · POTONG & BLEND",
+  "v": [
+   18.95,
+   20.5
+  ],
+  "a": [
+   18.95,
+   20.5
+  ],
+  "speed": 1,
+  "cap": "so kita [blend] lah cili ni",
+  "gfx": "Zoom-in perlahan ke blender",
+  "sfx": "Bunyi blender (0.8s) masa transisi",
+  "t0": 15.45,
+  "dur": 1.55
+ },
+ {
+  "id": 7,
+  "sec": "STEP 2 · POTONG & BLEND",
+  "v": [
+   23.4,
+   25.0
+  ],
+  "a": [
+   23.4,
+   25.0
+  ],
+  "speed": 1,
+  "cap": "cili pun dah [blend]",
+  "gfx": "Sticker '✔ siap' pop",
+  "sfx": "Ding",
+  "t0": 17.0,
+  "dur": 1.6
+ },
+ {
+  "id": 8,
+  "sec": "STEP 3 · TUMIS",
+  "v": [
+   28.6,
+   30.1
+  ],
+  "a": [
+   28.6,
+   30.1
+  ],
+  "speed": 1,
+  "cap": "kita masukkan [bawang]",
+  "gfx": "Label 'STEP 3 · TUMIS'",
+  "sfx": "Whoosh + sizzle dikuatkan",
+  "t0": 18.6,
+  "dur": 1.5
+ },
+ {
+  "id": 9,
+  "sec": "STEP 3 · TUMIS",
+  "v": [
+   31.0,
+   35.0
+  ],
+  "a": [
+   31.0,
+   35.0
+  ],
+  "speed": 1,
+  "cap": "dan juga [cili] ni",
+  "gfx": "Slow push-in masa cili dituang",
+  "sfx": "Sizzle kuat",
+  "t0": 20.1,
+  "dur": 4.0
+ },
+ {
+  "id": 10,
+  "sec": "STEP 3 · TUMIS",
+  "v": [
+   38.0,
+   42.2
+  ],
+  "a": null,
+  "speed": 2,
+  "cap": "",
+  "gfx": "Speed ramp 2x, teks kecil '2x ⏩'",
+  "sfx": "Sizzle loop + tick",
+  "t0": 24.1,
+  "dur": 2.1
+ },
+ {
+  "id": 11,
+  "sec": "STEP 3 · TUMIS",
+  "v": [
+   42.2,
+   44.2
+  ],
+  "a": [
+   42.2,
+   44.2
+  ],
+  "speed": 1,
+  "cap": "dan kita masukkan [serai]",
+  "gfx": "Callout 'serai' ikut batang serai",
+  "sfx": "Pop",
+  "t0": 26.2,
+  "dur": 2.0
+ },
+ {
+  "id": 12,
+  "sec": "STEP 3 · TUMIS",
+  "v": [
+   44.2,
+   48.2
+  ],
+  "a": null,
+  "speed": 2,
+  "cap": "",
+  "gfx": "Speed 2x, teks 'tumis sampai garing'",
+  "sfx": "Sizzle",
+  "t0": 28.2,
+  "dur": 2.0
+ },
+ {
+  "id": 13,
+  "sec": "STEP 4 · SARDIN",
+  "v": [
+   48.3,
+   53.6
+  ],
+  "a": [
+   48.3,
+   53.6
+  ],
+  "speed": 1,
+  "cap": "kita letakkan [ni]",
+  "gfx": "MOMEN BESAR: freeze 0.3s + teks gergasi 'SARDIN!' bounce, camera shake kecil masa sardin jatuh",
+  "sfx": "Riser → bass drop / splash",
+  "t0": 30.2,
+  "dur": 5.3
+ },
+ {
+  "id": 14,
+  "sec": "STEP 4 · SARDIN",
+  "v": [
+   53.6,
+   72.6
+  ],
+  "a": null,
+  "speed": 5,
+  "cap": "",
+  "gfx": "Timelapse 5x kacau & reneh. Teks 'kacau, kacau, kacau…' bertukar ikut beat",
+  "sfx": "Whoosh-tick montage",
+  "t0": 35.5,
+  "dur": 3.8
+ },
+ {
+  "id": 15,
+  "sec": "STEP 4 · SARDIN",
+  "v": [
+   72.75,
+   76.15
+  ],
+  "a": [
+   72.75,
+   76.15
+  ],
+  "speed": 1,
+  "cap": "so sekarang [air]… nanti tak habis pula",
+  "gfx": "Label 'air' di tin",
+  "sfx": "Pour/splash halus",
+  "t0": 39.3,
+  "dur": 3.4
+ },
+ {
+  "id": 16,
+  "sec": "STEP 5 · PERASA",
+  "v": [
+   84.6,
+   86.7
+  ],
+  "a": [
+   84.6,
+   86.7
+  ],
+  "speed": 1,
+  "cap": "so kita letak sikit apa ni…",
+  "gfx": "Label 'STEP 5 · PERASA'",
+  "sfx": "Whoosh",
+  "t0": 42.7,
+  "dur": 2.1
+ },
+ {
+  "id": 17,
+  "sec": "STEP 5 · PERASA",
+  "v": [
+   88.1,
+   89.3
+  ],
+  "a": [
+   88.1,
+   89.3
+  ],
+  "speed": 1,
+  "cap": "[kunyit]-kunyit",
+  "gfx": "Teks 'kunyit' warna kuning bounce",
+  "sfx": "Pop",
+  "t0": 44.8,
+  "dur": 1.2
+ },
+ {
+  "id": 18,
+  "sec": "STEP 5 · PERASA",
+  "v": [
+   91.4,
+   94.4
+  ],
+  "a": [
+   91.4,
+   94.4
+  ],
+  "speed": 1,
+  "cap": "kita letak [perasa] sikit",
+  "gfx": "Sticker 'perasa ✔'",
+  "sfx": "Sprinkle",
+  "t0": 46.0,
+  "dur": 3.0
+ },
+ {
+  "id": 19,
+  "sec": "STEP 5 · PERASA",
+  "v": [
+   96.4,
+   98.4
+  ],
+  "a": [
+   96.4,
+   98.4
+  ],
+  "speed": 1,
+  "cap": "then kita letak [garam]",
+  "gfx": "Sticker 'garam ✔'",
+  "sfx": "Sprinkle",
+  "t0": 49.0,
+  "dur": 2.0
+ },
+ {
+  "id": 20,
+  "sec": "STEP 5 · PERASA",
+  "v": [
+   99.0,
+   101.2
+  ],
+  "a": [
+   99.0,
+   101.2
+  ],
+  "speed": 1,
+  "cap": "dia pun dah [masak], jadi kita letak sini",
+  "gfx": "Callout 'cili hidup' (cili masuk)",
+  "sfx": "Pop",
+  "t0": 51.0,
+  "dur": 2.2
+ },
+ {
+  "id": 21,
+  "sec": "SIAP",
+  "v": [
+   104.3,
+   106.75
+  ],
+  "a": [
+   104.3,
+   106.75
+  ],
+  "speed": 1,
+  "cap": "so sajian pun dah [siap]",
+  "gfx": "Flash putih + teks 'SIAP! 🔥' + sparkle",
+  "sfx": "Ding-ding / success chime",
+  "t0": 53.2,
+  "dur": 2.45
+ },
+ {
+  "id": 22,
+  "sec": "OUTRO",
+  "v": [
+   106.75,
+   111.3
+  ],
+  "a": [
+   106.75,
+   111.3
+  ],
+  "speed": 1,
+  "cap": "so japgi kita edit guna [Claude], tengok macam mana hasilnya",
+  "gfx": "Slow zoom-out, kad krim 'Edited with Claude × HyperFrames'",
+  "sfx": "Musik lo-fi naik",
+  "t0": 55.65,
+  "dur": 4.55
+ },
+ {
+  "id": 23,
+  "sec": "END CARD",
+  "v": [
+   111.3,
+   112.7
+  ],
+  "a": null,
+  "speed": 1,
+  "hold": 1.5,
+  "cap": "",
+  "gfx": "Freeze-frame blur + 'Follow untuk part seterusnya' + butang like",
+  "sfx": "Pop + musik fade out",
+  "t0": 60.2,
+  "dur": 1.4
+ }
+]
